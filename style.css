@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Chakra+Petch:wght@500&family=Fredoka&family=Roboto:wght@300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', 'sans-serif';
+}
+body {
+    /* background-color: rgb(125, 136, 196) */
+    background-color: rgb(198, 231, 250);
+    height: 100vh;
+    width: 100vw;
+    
+}
+section#header {
+    background-color: rgb(16, 49, 72);
+    /* background-color: rgb(87, 165, 220); */
+    
+    height: 30%;
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+#img-cropper {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content:center;
+    overflow: hidden;
+    
+}
+#img-cropper > img {
+    height: 100%;
+    width: auto;
+}
+#info {
+    text-align: center;
+}
+.icons {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.icons > a > img, .icons > img{
+    width: 1.5em;
+    height: 1.5em;
+}
+/* .icons > img:hover {
+    width: 1.75em;
+    height: 1.75em;
+} */
+
+section#content {
+    /* background-color: green; */
+    width: 100%;
+    height: auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+section#content > div {
+    /* background-color: blue; */
+    min-width: 300px;
+    margin-top: 20px;
+}
+
+div#projects {
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+
+
+}
+.project-container {
+    height: 300px;
+    width: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5em;
+}
+.project-container:hover .project-info {
+    /* transform: translateX(-100%); */
+    opacity: 0.9;
+}
+.project-thumb{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.project-thumb img {
+    height: 100%;
+
+}
+
+.project-info{
+
+    transition: 0.5s;
+    height: 100%;
+    width: 100%;
+    background-color: #e0e0e0;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    /* left: 100%; */
+    opacity: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.project-text {
+    text-align: center;
+}
+.project-links {
+    display: flex;
+    justify-content: space-around;
+}
+.project-links > a > img{
+    height: 100px;
+    opacity:0.5;
+}
+.project-links > a > img:hover{
+    opacity:1;
+}
+.project-tools > img{
+    height: 2em;
+    width: 2em;
+}
